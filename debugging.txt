@@ -1,1 +1,37 @@
 # Debugging
+My Projects that I debugged
+
+*Dice game 
+
+- found bug the code didn't prevent values less than 0 or greater than 7
+  from being used.
+
+  - corrected it by changing while(this.currentRoll != 1) to while(this.currentRoll != 1 && this.currentRoll < 7 && this.currentRoll >= 0 )
+
+  *Simple Craps
+
+  - found bug user could enter invalid rolls 
+  - fixed by addind if (this.value >= 0 || this.value < 13) {
+  					System.out.println("Invalid roll ERROR");
+										break;
+
+										*RPN Calculator Did not find any bugs
+
+
+										*Bowling
+
+										- found bug where pins knocked down can be greater than ten and less than zero 
+										- found bug where pins knocked down where between 9 and 0 instead of 10 and 0
+										- fixed bugs by changing (Math.random() * (10) + 0) to (Math.random() * (11 + 0)),
+										 and by adding if (rollOne < 0 || rollOne > 10) {System.out.println("Cheater");}
+
+										 *Bank Account 
+										 - fixed  print statement bug
+										 -  changed   DecimalFormat df = new DecimalFormat("#.00"); to DecimalFormat df = new DecimalFormat("0.00");
+										     to print out 0.00 if balance is 0 instead of .00 
+										     - also removed unnecessary if statement wasn't really a bug It just wasn't really unnecessary.
+
+
+										     *Class Roster
+										     - found no bugs
+
